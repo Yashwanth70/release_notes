@@ -51,7 +51,7 @@ grouped_commits = group_commits_by_convention(commits)
 rendered_content = template.render(
     grouped_commits=grouped_commits,
     repo_name=repo_name,
-    version="2.4.0" # Version Name from Image
+    version="v17.0.9"
 )
 
 # Save the rendered HTML to a file

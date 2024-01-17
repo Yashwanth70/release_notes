@@ -21,3 +21,7 @@ This python repo fetches commit data from a public GitHub repository and generat
     ```bash
     python main.py
 6. Open the generated HTML file (index.html) in a web browser to view the change log.
+7. This is deployed on Vercel, here is the link:
+```commandline
+https://release-notes-wheat.vercel.app/
+```
