@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ repo_name }} - {{ version }}</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th{
+            background-color: lightblue;
+        }
+        .table_header_changes{
+            width: 500px;
+        }
+        .table_header{
+            width: 150px;
+        }
+        td {
+            padding: 5px;
+        }
+        h2 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ repo_name }} - {{ version }}</h1>
+    {% for section, commits in grouped_commits.items() %}
+    <h2>{{ section }}</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Commit</th>
+                <th>Author</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for commit in commits %}
+            <tr>
+                <td>{{ commit['sha'] }}</td>
+                <td>{{ commit['commit']['author']['name'] }}</td>
+                <td>{{ commit['commit']['message'].splitlines()[0] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endfor %}
+    <h2>Files</h2>
+    <ul>
+        {% for file in files %}  <li>{{ file }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>angular - 2.4.0</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th{
+            background-color: lightblue;
+        }
+        .table_header_changes{
+            width: 500px;
+        }
+        .table_header{
+            width: 150px;
+        }
+        td {
+            padding: 5px;
+        }
+        h2 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>angular - 2.4.0</h1>
+    
+    <h2>Code Refactoring</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Commit</th>
+                <th>Author</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>b0e0f0014ec0e41bd86f8dfadf9a96e67a1c40c8</td>
+                <td>Andrew Kushnir</td>
+                <td>refactor(compiler): extra diagnostics for `@defer` in local compilation mode (#53899)</td>
+            </tr>
+            
+            <tr>
+                <td>f9781f9804f1e7c84df356d9aeb267730a7fc499</td>
+                <td>Joey Perrott</td>
+                <td>refactor: migrate modules to prettier formatting (#53954)</td>
+            </tr>
+            
+            <tr>
+                <td>e1ac52a0b4c0ceadf2c0e937c708da1c6b331ddf</td>
+                <td>Pawel Kozlowski</td>
+                <td>refactor(core): introduce query-as-signal authoring functions (#53829)</td>
+            </tr>
+            
+            <tr>
+                <td>08233b8374ab5300bd7a7028d6d28634d8a44820</td>
+                <td>Andrew Kushnir</td>
+                <td>refactor(compiler): enable `register` and `resolve` phases for local compilation (#53901)</td>
+            </tr>
+            
+            <tr>
+                <td>dc62446ef7f2898a20d3be1196ecaf2a92a1077d</td>
+                <td>Joey Perrott</td>
+                <td>refactor: migrate tools to prettier formatting (#53947)</td>
+            </tr>
+            
+            <tr>
+                <td>6581ac94cd36937fff812142705ccce2af73505a</td>
+                <td>Pawel Kozlowski</td>
+                <td>refactor(core): re-organize queries code (#53922)</td>
+            </tr>
+            
+            <tr>
+                <td>af6f6e6448edffcd644b0bb6ce155c3ca4270971</td>
+                <td>Pawel Kozlowski</td>
+                <td>refactor(core): improve forwardRef typings (#53880)</td>
+            </tr>
+            
+            <tr>
+                <td>79fbc4eaba729f7edd3577d6aec22f8e621cf594</td>
+                <td>Andrew Kushnir</td>
+                <td>refactor(compiler-cli): add tests for defer blocks and local compilation (#53591)</td>
+            </tr>
+            
+            <tr>
+                <td>8ca0b0515d75de5e9136ce8f6eef320569a0d8ef</td>
+                <td>Andrew Kushnir</td>
+                <td>refactor(compiler): update TemplateDefinitionBuilder to support local compilation (#53591)</td>
+            </tr>
+            
+            <tr>
+                <td>df685ed7c522bab05d709a11f93f80860d0f5eaa</td>
+                <td>Andrew Kushnir</td>
+                <td>refactor(compiler-cli): add checks to prevent same deps in `imports` and `deferredImports` (#53591)</td>
+            </tr>
+            
+            <tr>
+                <td>a2aa23d8b5862af49317a5f8b140a5101e76e9c0</td>
+                <td>Andrew Kushnir</td>
+                <td>refactor(compiler): add support for internal `deferredImports` field (#53591)</td>
+            </tr>
+            
+            <tr>
+                <td>b780d39612e54165e68c8b171e37d0915631e9e6</td>
+                <td>Andrew Kushnir</td>
+                <td>refactor(compiler-cli): update DeferredSymbolTracker to use explicit deps config (#53591)</td>
+            </tr>
+            
+            <tr>
+                <td>d28cf00df6028e804b6a9e21e6daa4738b08c3f6</td>
+                <td>Andrew Kushnir</td>
+                <td>refactor(compiler-cli): add an internal config to enforce explicit deps in `@defer` for local compilation mode (#53591)</td>
+            </tr>
+            
+            <tr>
+                <td>6eb5e37d6f8ce58c0a64d327bf12c3d762950a23</td>
+                <td>Andrew Kushnir</td>
+                <td>refactor(compiler): add an internal API to check is an element is inside a defer block (#53591)</td>
+            </tr>
+            
+            <tr>
+                <td>7d1d6049166a4f79b873e3f8a89bf49d7228973f</td>
+                <td>Andrew Kushnir</td>
+                <td>refactor(compiler-cli): store full Pipe metadata in typechecking code (#53591)</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+    <h2>Bug Fixes</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Commit</th>
+                <th>Author</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>df6c2057f2b4617e3c40cea4682b41d73fcff72b</td>
+                <td>Jessica Janiuk</td>
+                <td>fix(core): Change defer block fixture default behavior to playthrough (#53956)</td>
+            </tr>
+            
+            <tr>
+                <td>760b1f3d0b857288980f2d9929147f331d657f7d</td>
+                <td>Paul Gschwendtner</td>
+                <td>fix(compiler-cli): do not throw fatal error if extended type check fails (#53896)</td>
+            </tr>
+            
+            <tr>
+                <td>1f8c53cd0c6c54b9d017f888567b85683ab0d348</td>
+                <td>Andrew Scott</td>
+                <td>fix(core): TestBed should still use the microtask queue to schedule effects (#53843)</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+    <h2>Tests</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Commit</th>
+                <th>Author</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>616df433c9c12f4a23b51528bcc646e9c43c5e67</td>
+                <td>Pawel Kozlowski</td>
+                <td>test(core): support type tests for different authoring functions (#53829)</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+    <h2>Documentation</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Commit</th>
+                <th>Author</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>6007af9651ee0493c7696ba1f661fd25fbb4e2aa</td>
+                <td>Matthieu Riegler</td>
+                <td>docs: add `platform-browser/animations/async` entry to AIO (#53914)</td>
+            </tr>
+            
+            <tr>
+                <td>4ca81b09e8aa2b2770729fc0e6e04bf71c21585f</td>
+                <td>AleksanderBodurri</td>
+                <td>docs(devtools): update development docs (#53948)</td>
+            </tr>
+            
+            <tr>
+                <td>426bcb999aa50375a3aefa1cccf2e664067dfd06</td>
+                <td>AleksanderBodurri</td>
+                <td>docs(devtools): remove devtools/CONTRIBUTING.md (#53948)</td>
+            </tr>
+            
+            <tr>
+                <td>e9c659a48674eef326b0f808aef4d4640337739e</td>
+                <td>Ilija Leko</td>
+                <td>docs: fix-build-path-in-http-server-command (#53226)</td>
+            </tr>
+            
+            <tr>
+                <td>1af3ae3deef607589e869e71fcd259fdb945b049</td>
+                <td>Sasidharan SD</td>
+                <td>docs: remove repeated sentence (#53853)</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+    <h2>Features</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Commit</th>
+                <th>Author</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>66e940aebfd5a93944860a4e0dbd14e1072f80f2</td>
+                <td>Daniel Puckowski</td>
+                <td>feat(compiler): scope selectors in @starting-style (#53943)</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+    <h2>Continuous Integration</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Commit</th>
+                <th>Author</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>0accc64cc0178dcc10fa6ea0fe5c3057af7edabb</td>
+                <td>Joey Perrott</td>
+                <td>ci: use the config from adev for adev previews (#53955)</td>
+            </tr>
+            
+            <tr>
+                <td>e1b9b662a0629be0397e89a7f2161c9aa7af00d6</td>
+                <td>Joey Perrott</td>
+                <td>ci: set up previews of adev (#53941)</td>
+            </tr>
+            
+            <tr>
+                <td>d04f98d7130a48218480b6166377348bb4adb28f</td>
+                <td>Joey Perrott</td>
+                <td>ci: run adev tests on CI (#53941)</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+    <h2>Build System</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Commit</th>
+                <th>Author</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>02b8e11e1e3109b1b0f72a2ef0bb36e08602471b</td>
+                <td>Joey Perrott</td>
+                <td>build(docs-infra): enable prerendering for adev (#53871)</td>
+            </tr>
+            
+            <tr>
+                <td>a2087a1978dfd96a1d426b6814510f642f717fb9</td>
+                <td>Angular Robot</td>
+                <td>build: update cross-repo angular dependencies (#53606)</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+    <h2>Files</h2>
+    <ul>
+        
+    </ul>
+</body>
+</html>
