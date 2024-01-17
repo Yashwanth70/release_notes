@@ -55,5 +55,5 @@ rendered_content = template.render(
 )
 
 # Save the rendered HTML to a file
-with open("templates/changelog_result.html", "w") as file:
+with open("index.html", "w") as file:
     file.write(rendered_content)

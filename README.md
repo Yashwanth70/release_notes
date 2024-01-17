@@ -20,4 +20,4 @@ This python repo fetches commit data from a public GitHub repository and generat
 5. Run the script.
     ```bash
     python main.py
-6. Open the generated HTML file (changelog_result.html) in a web browser to view the change log.
+6. Open the generated HTML file (index.html) in a web browser to view the change log.
